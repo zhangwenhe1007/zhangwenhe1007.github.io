@@ -1,224 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Wenhe Zhang | Yale University | Computer Science and Mathematics"
-    />
-    <title>Wenhe Zhang</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="page">
-      <header class="header">
-        <h1>Wenhe Zhang</h1>
-        <p class="subtitle">
-          Undergraduate Researcher and Engineer at Yale University (CS + Math)
-        </p>
-        <p class="links">
-          <a href="mailto:wenhe.zhang@yale.edu">wenhe.zhang@yale.edu</a>
-          <span>|</span>
-          <a href="tel:+12034669422">+1 (203) 466-9422</a>
-          <span>|</span>
-          <a href="https://zhangwenhe1007.github.io">Website</a>
-          <span>|</span>
-          <a href="https://linkedin.com/in/wenhez" target="_blank" rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <span>|</span>
-          <a href="https://github.com/zhangwenhe1007" target="_blank" rel="noopener noreferrer"
-            >GitHub</a
-          >
-        </p>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wenhe Zhang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="name">Wenhe Zhang</a>
+      <a href="projects.html">Projects</a>
+      <a href="interests.html">Interests</a>
+    </nav>
 
-      <section>
-        <h2>Education</h2>
-        <article class="item">
-          <div class="row">
-            <h3>Yale University</h3>
-            <p>Aug 2024 - May 2028</p>
-          </div>
-          <p class="muted">B.S. Computer Science, B.S. Mathematics | New Haven, CT</p>
-          <p>
-            Coursework: Data Structures, Algorithms, Computer Systems, Computer
-            Architecture, Deep Learning, Networks
-          </p>
-          <p>
-            Awards: International Physics Olympiad Bronze Medal (2023), MIT
-            Quantum Computing Hackathon First Place (2025)
-          </p>
-          <p>
-            Activities: Event Lead for Yale AI Association, Teaching Assistant
-            for Algorithms
-          </p>
-        </article>
-      </section>
+    <p>
+      Computer Science and Mathematics @ Yale '28. Interested in AI, robotics, and systems.
+    </p>
 
-      <section>
-        <h2>Experience</h2>
+    <p class="links">
+      <a href="mailto:wenhe.zhang@yale.edu">Email</a>
+      <a href="https://github.com/zhangwenhe1007">GitHub</a>
+      <a href="https://www.linkedin.com/in/wenhez">LinkedIn</a>
+      <a href="https://zhangwenhe1007.github.io">Website</a>
+    </p>
 
-        <article class="item">
-          <div class="row">
-            <h3>Yale Apollo Lab - Research Assistant</h3>
-            <p>Sep 2025 - Present</p>
-          </div>
-          <p class="muted">Advised by Prof. Daniel Rakita | New Haven, CT</p>
-          <p>
-            Developing policy-streaming PPO for dexterous hand manipulation in
-            ManiSkill and MuJoCo with RGB inputs, CNN encoders, frame stacking,
-            and observation normalization.
-          </p>
-        </article>
+    <hr>
 
-        <article class="item">
-          <div class="row">
-            <h3>Yale Vision Lab - Research Assistant</h3>
-            <p>Jul 2025 - Present</p>
-          </div>
-          <p class="muted">Advised by Prof. Alex Wong | New Haven, CT</p>
-          <p>
-            Investigating vision-language-action policies for multimodal robot
-            navigation using LoRA adapters, instruction tuning, and behavior
-            cloning.
-          </p>
-        </article>
+    <h2>Courses</h2>
 
-        <article class="item">
-          <div class="row">
-            <h3>Yale Gerstein Lab - Research Assistant</h3>
-            <p>Jul 2025 - Present</p>
-          </div>
-          <p class="muted">Advised by Prof. Mark Gerstein | New Haven, CT</p>
-          <p>
-            Fine-tuned E(3)-equivariant diffusion model with GRPO and
-            force-field guidance on QM9 for physics-informed 3D molecular
-            generation (submitted to ICML 2026).
-          </p>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <h3>Yale Graph and Geometric Learning Lab - Research Assistant</h3>
-            <p>Mar 2025 - Dec 2025</p>
-          </div>
-          <p class="muted">Advised by Prof. Rex Ying | New Haven, CT</p>
-          <p>
-            Fine-tuned a time-series LLM on telecom data with contrastive
-            pretraining, global/per-channel context tokens, and
-            retrieval-augmented inputs.
-          </p>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <h3>Norric - Machine Learning Engineer</h3>
-            <p>Mar 2025 - Present</p>
-          </div>
-          <p class="muted">Remote</p>
-          <p>
-            Built a GCP-deployed RAG system for financial documents using
-            FastAPI, Cloud Run, Vertex AI embeddings, Llama 3-8B, Pinecone, and
-            Cloud Storage.
-          </p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Selected Projects</h2>
-
-        <article class="item">
-          <div class="row">
-            <h3>Boola - Yale Chatbot</h3>
-            <p>Oct 2025 - Present</p>
-          </div>
-          <p>
-            Fine-tuned Llama 3.2 8B and Qwen2.5 14B with QLoRA/PEFT and ORPO;
-            integrated RAG crawler pipeline and hybrid pgvector search with
-            LlamaIndex and LangChain.
-          </p>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <h3>FLUX.1 Sparse Autoencoder</h3>
-            <p>Sep 2025 - Dec 2025</p>
-          </div>
-          <p>
-            Built interpretability pipeline for FLUX.1-dev by training Top-K
-            SAE at 4x expansion; added CLIP-based coherence ranking and
-            localization overlays.
-          </p>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <h3>Wordfleet - Multiplayer Word-Guessing Game</h3>
-            <p>May 2025 - Dec 2025</p>
-          </div>
-          <p>
-            Built Bomb Party style game with adaptive difficulty and custom
-            game states using Java Spring Boot, Redis, Docker, Kubernetes, and
-            Agones on GCP.
-          </p>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <h3>MajorAudit - Yale Computer Science Society</h3>
-            <p>Sep 2024 - Present</p>
-          </div>
-          <p>
-            Built React + TypeScript frontend and Python GraphQL backend with
-            PostgreSQL and requirement query language for 80+ majors and 8,000+
-            courses.
-          </p>
-        </article>
-
-        <article class="item">
-          <div class="row">
-            <h3>Artificial Sign Language</h3>
-            <p>2023</p>
-          </div>
-          <p>
-            Trained and compared CNN/LSTM models for ASL-to-English
-            translation; represented Canada ISEF Reserve Team at ISEF 2023.
-          </p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Skills</h2>
+    <details class="collapsible">
+      <summary>Computer Science</summary>
+      <div class="collapsible-content">
         <p>
-          <strong>Spoken Languages:</strong> English, French, Mandarin,
-          Spanish
+          Data Structures, Algorithms, Computer Systems, Computer Architecture,
+          Deep Learning, Networks
         </p>
-        <p>
-          <strong>Programming:</strong> Python, C/C++, Java, R, Bash, SQL, Dart,
-          JavaScript, HTML/CSS
-        </p>
-        <p>
-          <strong>ML/Systems:</strong> PyTorch, CUDA, TensorFlow/Keras, GCP,
-          LangChain, PostgreSQL, MySQL, MongoDB, Docker, Kubernetes, Linux/Unix,
-          Git/GitHub, Flask, Django, React
-        </p>
-      </section>
+      </div>
+    </details>
 
-      <footer>
+    <details class="collapsible">
+      <summary>Mathematics and Physics</summary>
+      <div class="collapsible-content">
         <p>
-          Contact:
-          <a href="mailto:wenhe.zhang@yale.edu">wenhe.zhang@yale.edu</a> |
-          <a href="https://linkedin.com/in/wenhez" target="_blank" rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          |
-          <a href="https://github.com/zhangwenhe1007" target="_blank" rel="noopener noreferrer"
-            >GitHub</a
-          >
+          Mathematics major coursework in progress. International Physics Olympiad Bronze Medal (2023).
         </p>
-      </footer>
-    </main>
-  </body>
+      </div>
+    </details>
+
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <b><a href="https://apollo.cs.yale.edu/">Yale Apollo Lab</a></b> - Sep 2025 - Present<br>
+      Research assistant. Developing policy-streaming PPO for dexterous hand manipulation in ManiSkill and MuJoCo with RGB inputs, CNN encoders, frame stacking, and observation normalization.
+    </div>
+
+    <div class="experience-item">
+      <b><a href="https://www.vlrlab.net/">Yale Vision Lab</a></b> - Jul 2025 - Present<br>
+      Research assistant. Investigating vision-language-action policies for multimodal robot navigation using LoRA adapters, instruction tuning, and behavior cloning.
+    </div>
+
+    <div class="experience-item">
+      <b><a href="https://gersteinlab.org/">Yale Gerstein Lab</a></b> - Jul 2025 - Present<br>
+      Research assistant. Fine-tuned E(3)-equivariant diffusion model with GRPO and force-field guidance on QM9 for physics-informed molecular generation in 3D.
+    </div>
+
+    <div class="experience-item">
+      <b>Yale Graph and Geometric Learning Lab</b> - Mar 2025 - Dec 2025<br>
+      Research assistant. Fine-tuned time-series LLM on telecom data with contrastive pretraining and retrieval-augmented inputs.
+    </div>
+
+    <div class="experience-item">
+      <b>Norric</b> - Mar 2025 - Present<br>
+      Machine Learning Engineer. Built a GCP-deployed RAG Q&A system for financial documents using FastAPI, Cloud Run, Vertex AI embeddings, Llama 3-8B, Pinecone, and Cloud Storage.
+    </div>
+
+    <h2>Teaching</h2>
+    <div class="experience-item"><b>Teaching Assistant</b><br>
+      Algorithms (Yale) - 2025 - Present
+    </div>
+
+    <h2>Awards</h2>
+    <div class="experience-item">
+      International Physics Olympiad Bronze Medal (2023)<br>
+      MIT Quantum Computing Hackathon First Place (2025)
+    </div>
+
+  </div>
+  <div class="last-edited">Last edited: February 19, 2026</div>
+</body>
 </html>
