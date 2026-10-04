@@ -146,16 +146,21 @@ h2 {
   list-style: none;
 }
 
-/* Figure column on the left, text on the right. Entries without a figure keep an empty slot so titles align. */
 .pub {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
   margin-bottom: 20px;
 }
 
+/* Figure column on the left, text on the right. Entries without a figure keep an empty slot so titles align.
+   The row applies only to entries with a .pub-body, so a cached older page never turns its lines into columns. */
+.pub:has(> .pub-body) {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
 .pub-thumb {
-  flex: 0 0 120px;
+  flex: none;
+  width: 120px;
 }
 
 .pub-thumb img {
@@ -296,13 +301,12 @@ h2 {
   }
 
   /* On phones the figure sits above the text; empty slots disappear. */
-  .pub {
+  .pub:has(> .pub-body) {
     flex-direction: column;
     gap: 8px;
   }
 
   .pub-thumb {
-    flex: none;
     width: 160px;
   }
 
