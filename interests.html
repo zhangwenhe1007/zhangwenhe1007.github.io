@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interests - Wenhe Zhang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interests · Wenhe Zhang</title>
+  <meta name="description" content="Research and technical interests of Wenhe Zhang.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Interests · Wenhe Zhang">
+  <meta property="og:url" content="https://zhangwenhe1007.github.io/interests.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html" class="name">Wenhe Zhang</a>
-      <a href="projects.html">Projects</a>
-      <a href="interests.html">Interests</a>
+  <div class="page">
+    <nav class="site-nav" aria-label="Site">
+      <a class="site-name" href="index.html">Wenhe Zhang</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="interests.html" aria-current="page">Interests</a></li>
+      </ul>
     </nav>
 
-    <h1>Interests</h1>
+    <main>
+      <h1 class="page-title">Interests</h1>
 
-    <h2>Research Interests</h2>
-    <details class="collapsible">
-      <summary>Areas I am focused on</summary>
-      <div class="collapsible-content">
-        <div class="book-item">
-          <strong>Robot Learning</strong> - vision-language-action policies, dexterous manipulation, policy optimization
-        </div>
-        <div class="book-item">
-          <strong>Scientific ML</strong> - geometric learning and physics-informed generative modeling
-        </div>
-        <div class="book-item">
-          <strong>LLM Systems</strong> - retrieval-augmented generation, preference tuning, deployment on cloud infrastructure
-        </div>
-      </div>
-    </details>
+      <section aria-labelledby="research-interests">
+        <h2 id="research-interests">Research interests</h2>
+        <dl class="defs">
+          <dt>Generative models for decision-making</dt>
+          <dd>Diffusion and flow-based policies, world models, and RL with expressive policies.</dd>
+          <dt>Theory of generative modeling</dt>
+          <dd>Optimal transport, stochastic calculus, and convergence of diffusion samplers.</dd>
+          <dt>Robot learning</dt>
+          <dd>What lets robot foundation models generalize, stay robust, and use memory over long horizons.</dd>
+        </dl>
+      </section>
 
-    <h2>Technical Interests</h2>
-    <details class="collapsible">
-      <summary>Tools and systems I enjoy building with</summary>
-      <div class="collapsible-content">
-        <div class="essay-item">
-          <strong>ML stack</strong> - PyTorch, CUDA, TensorFlow/Keras, LoRA/QLoRA training workflows
-        </div>
-        <div class="essay-item">
-          <strong>Backend and cloud</strong> - FastAPI, GCP Cloud Run, vector databases, monitoring pipelines
-        </div>
-        <div class="essay-item">
-          <strong>Systems engineering</strong> - Docker, Kubernetes, Linux/Unix workflows
-        </div>
-      </div>
-    </details>
+      <section aria-labelledby="technical">
+        <h2 id="technical">Technical</h2>
+        <dl class="defs">
+          <dt>ML</dt>
+          <dd>PyTorch, CUDA and Triton kernels, LLM serving with vLLM and SGLang</dd>
+          <dt>Systems</dt>
+          <dd>Docker, Kubernetes, Linux, GCP</dd>
+        </dl>
+      </section>
 
-    <h2>Outside Work</h2>
-    <details class="collapsible">
-      <summary>Other things I enjoy</summary>
-      <div class="collapsible-content">
-        <div class="movie-item">
-          <strong>Teaching and mentorship</strong> - TA for Algorithms and event lead for Yale AI Association
-        </div>
-        <div class="movie-item">
-          <strong>Languages</strong> - English, French, Mandarin, Spanish
-        </div>
-      </div>
-    </details>
+      <section aria-labelledby="outside-work">
+        <h2 id="outside-work">Outside work</h2>
+        <dl class="defs">
+          <dt>Teaching and mentorship</dt>
+          <dd>TA for Algorithms; event lead for the Yale AI Association</dd>
+          <dt>Languages</dt>
+          <dd>English, French, Mandarin, Spanish</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer">Last edited: October 2026</footer>
   </div>
-  <div class="last-edited">Last edited: February 19, 2026</div>
 </body>
 </html>

@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Wenhe Zhang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Wenhe Zhang</title>
+  <meta name="description" content="Open-source contributions and engineering projects by Wenhe Zhang.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects · Wenhe Zhang">
+  <meta property="og:url" content="https://zhangwenhe1007.github.io/projects.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html" class="name">Wenhe Zhang</a>
-      <a href="projects.html">Projects</a>
-      <a href="interests.html">Interests</a>
+  <div class="page">
+    <nav class="site-nav" aria-label="Site">
+      <a class="site-name" href="index.html">Wenhe Zhang</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="interests.html">Interests</a></li>
+      </ul>
     </nav>
 
-    <h1>Projects</h1>
+    <main>
+      <h1 class="page-title">Projects</h1>
 
-    <div class="project-item">
-      <strong>Boola - Yale Chatbot</strong><br>
-      Fine-tuned Llama 3.2 8B and Qwen2.5 14B via QLoRA with PEFT and ORPO, then integrated RAG with crawler pipeline and hybrid pgvector search.
-    </div>
+      <section aria-labelledby="open-source">
+        <h2 id="open-source">Open source</h2>
+        <div class="item">
+          <h3><a href="https://github.com/deepseek-ai/DeepSpec">DeepSpec</a> (DeepSeek)</h3>
+          <p>Two pull requests adding a differentiable direct-acceptance objective and RoPE-scaled long-context drafter training.</p>
+          <p class="item-links"><a href="https://github.com/deepseek-ai/DeepSpec/pull/58">PR #58</a> · <a href="https://github.com/deepseek-ai/DeepSpec/pull/59">PR #59</a></p>
+        </div>
+        <!-- TODO: uncomment once the repository is public, and set its URL.
+        <div class="item">
+          <h3>Sparse attention harness</h3>
+          <p>Evaluation and repair code for <em>Lost in a Few Heads</em>.</p>
+          <p class="item-links"><a href="https://github.com/zhangwenhe1007/REPO_NAME">GitHub</a></p>
+        </div>
+        -->
+      </section>
 
-    <div class="project-item">
-      <strong>FLUX.1 Sparse Autoencoder</strong><br>
-      Built an interpretability pipeline for FLUX.1-dev by training Top-K SAE at 4x expansion with CLIP-based coherence ranking and localization overlays.
-    </div>
+      <section aria-labelledby="engineering">
+        <h2 id="engineering">Engineering</h2>
+        <div class="item">
+          <h3>Boola - Yale Chatbot</h3>
+          <p>Fine-tuned Llama 3.2 8B and Qwen2.5 14B via QLoRA with PEFT and ORPO, then integrated RAG with crawler pipeline and hybrid pgvector search.</p>
+        </div>
+        <div class="item">
+          <h3>FLUX.1 Sparse Autoencoder</h3>
+          <p>Built an interpretability pipeline for FLUX.1-dev by training Top-K SAE at 4x expansion with CLIP-based coherence ranking and localization overlays.</p>
+        </div>
+        <div class="item">
+          <h3>Wordfleet - Multiplayer Word-Guessing Game</h3>
+          <p>Built a Bomb Party style game with adaptive difficulty and custom game states using GCP, Docker, Kubernetes, Java Spring Boot, Redis, and Agones.</p>
+          <p class="item-links"><a href="https://github.com/zhangwenhe1007/Wordfleet">GitHub</a></p>
+        </div>
+        <div class="item">
+          <h3>MajorAudit - Yale Computer Science Society</h3>
+          <p>Built React + TypeScript frontend and Python GraphQL backend with PostgreSQL and a custom requirement query language for 80+ majors and 8,000+ courses.</p>
+        </div>
+      </section>
+    </main>
 
-    <div class="project-item">
-      <strong>Wordfleet - Multiplayer Word-Guessing Game</strong> <span class="project-links">[<a href="https://github.com/zhangwenhe1007/Wordfleet">GitHub</a>]</span><br>
-      Built a Bomb Party style game with adaptive difficulty and custom game states using GCP, Docker, Kubernetes, Java Spring Boot, Redis, and Agones.
-    </div>
-
-    <div class="project-item">
-      <strong>MajorAudit - Yale Computer Science Society</strong><br>
-      Built React + TypeScript frontend and Python GraphQL backend with PostgreSQL and a custom requirement query language for 80+ majors and 8,000+ courses.
-    </div>
-
-    <div class="project-item">
-      <strong>Artificial Sign Language</strong><br>
-      Trained and compared four models (CNNs and LSTMs) for ASL-to-English translation; represented Canada ISEF Reserve Team at ISEF 2023.
-    </div>
+    <footer class="site-footer">Last edited: October 2026</footer>
   </div>
-  <div class="last-edited">Last edited: February 19, 2026</div>
 </body>
 </html>

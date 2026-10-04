@@ -1,92 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wenhe Zhang</title>
+  <meta name="description" content="Wenhe Zhang studies computer science and mathematics at Yale, with research interests in generative models for decision-making: diffusion and flow-based policies, world models, and reinforcement learning.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wenhe Zhang">
+  <meta property="og:description" content="Computer Science and Mathematics @ Yale ’28. Generative models for decision-making.">
+  <meta property="og:url" content="https://zhangwenhe1007.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html" class="name">Wenhe Zhang</a>
-      <a href="projects.html">Projects</a>
-      <a href="interests.html">Interests</a>
+  <div class="page">
+    <nav class="site-nav" aria-label="Site">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="interests.html">Interests</a></li>
+      </ul>
     </nav>
 
-    <p>
-      Computer Science and Mathematics @ Yale '28. Interested in AI, robotics, and systems.
-    </p>
+    <main>
+      <header class="intro">
+        <h1>Wenhe Zhang</h1>
+        <p class="tagline">Computer Science and Mathematics @ Yale ’28</p>
+        <p>I’m a junior at Yale studying computer science and mathematics. I’m interested in generative models for decision-making: diffusion and flow-based policies, world models, and reinforcement learning with expressive policies, from the theory of generative modeling to how these models plan and act. Previously, at Huawei Noah’s Ark Lab, I worked on efficient inference for large language models, including sparse attention and speculative decoding.</p>
+        <ul class="contact">
+          <li><a href="mailto:wenhe.zhang@yale.edu">Email</a></li>
+          <li><a href="https://github.com/zhangwenhe1007">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/wenhez">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=1OajZ7AAAAAJ&amp;hl=en">Google Scholar</a></li>
+        </ul>
+      </header>
 
-    <p class="links">
-      <a href="mailto:wenhe.zhang@yale.edu">Email</a>
-      <a href="https://github.com/zhangwenhe1007">GitHub</a>
-      <a href="https://www.linkedin.com/in/wenhez">LinkedIn</a>
-      <a href="https://zhangwenhe1007.github.io">Website</a>
-    </p>
+      <section aria-labelledby="research">
+        <h2 id="research">Research</h2>
+        <ul class="pubs">
+          <li class="pub">
+            <p class="pub-title">Lost in a Few Heads: Diagnosing and Repairing Block Selection in Sparse Attention Language Models</p>
+            <p><strong>Wenhe Zhang</strong></p>
+            <p class="pub-venue"><span class="status">Under review at ICLR 2027</span></p>
+            <p class="pub-summary">Traces the long-context retrieval loss of deployed sparse-attention LLMs to a few attention heads whose block selector cannot resolve a single decisive token, and repairs it without training.</p>
+          </li>
+          <li class="pub">
+            <p class="pub-title"><a href="https://arxiv.org/abs/2601.21985">Elign: Equivariant Diffusion Model Alignment from Foundational Machine Learning Force Fields</a></p>
+            <p>Yunyang Li, Lin Huang, Luojia Xia, <strong>Wenhe Zhang</strong>, Mark Gerstein</p>
+            <p class="pub-venue"><span class="venue">ICML 2026</span> · <a href="https://arxiv.org/abs/2601.21985">arXiv</a></p>
+            <p class="pub-summary">Post-trains an E(3)-equivariant molecular diffusion model with GRPO, using a foundational machine-learning force field as the reward.</p>
+          </li>
+          <li class="pub">
+            <p class="pub-title"><a href="https://arxiv.org/abs/2609.28807">An Analysis of Streaming Deep Reinforcement Learning for Adaptive Continual Learning in Robotics</a></p>
+            <p>Teeratham Vitchutripop, Alyssa Quarles, <strong>Wenhe Zhang</strong>, Richard Xue, Daniel Rakita</p>
+            <p class="pub-venue"><span class="venue">IROS 2026 Workshop</span> · <span class="award">Spotlight</span> · <a href="https://arxiv.org/abs/2609.28807">arXiv</a> · <a href="https://openreview.net/forum?id=HVz03FoVcw">OpenReview</a></p>
+            <p class="pub-summary">Streaming deep RL for continual online adaptation of pretrained robot policies.</p>
+          </li>
+          <li class="pub">
+            <p class="pub-title">Acceptance Is Not Throughput: A Unified Law for Parallel Speculative Decoding</p>
+            <p><strong>Wenhe Zhang</strong></p>
+            <p class="pub-venue"><span class="status">Manuscript in preparation</span></p>
+            <p class="pub-summary">A throughput law that places parallel drafters on one curve through their conditioning depth, showing that most levers the field pushes raise acceptance length without raising speed.</p>
+          </li>
+        </ul>
+      </section>
 
-    <hr>
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Huawei Noah’s Ark Lab</h3>
+            <span class="entry-dates">May to August 2026</span>
+          </div>
+          <p class="entry-role">Research Intern, advised by Dr. Boxing Chen</p>
+          <p>Sparse attention and speculative decoding for LLM inference; two pull requests to DeepSeek’s <a href="https://github.com/deepseek-ai/DeepSpec">DeepSpec</a>.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Yale Graph and Geometric Learning Lab</h3>
+            <span class="entry-dates">March 2025 to present</span>
+          </div>
+          <p class="entry-role">Research Assistant, advised by Prof. Rex Ying</p>
+          <p>Test-time memory for LLMs; time-series LLMs.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3><a href="https://apollo-lab-yale.github.io/">Yale Apollo Lab</a></h3>
+            <span class="entry-dates">September 2025 to May 2026</span>
+          </div>
+          <p class="entry-role">Research Assistant, advised by Prof. Daniel Rakita</p>
+          <p>Streaming RL for adapting pretrained robot policies.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3><a href="https://gersteinlab.org/">Yale Gerstein Lab</a></h3>
+            <span class="entry-dates">July 2025 to April 2026</span>
+          </div>
+          <p class="entry-role">Research Assistant, advised by Prof. Mark Gerstein</p>
+          <p>RL fine-tuning of equivariant diffusion models for molecular generation.</p>
+        </div>
+      </section>
 
-    <h2>Courses</h2>
+      <section aria-labelledby="teaching">
+        <h2 id="teaching">Teaching</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Teaching Assistant, Algorithms (Yale)</h3>
+            <span class="entry-dates">2025 to present</span>
+          </div>
+        </div>
+      </section>
 
-    <details class="collapsible">
-      <summary>Computer Science</summary>
-      <div class="collapsible-content">
-        <p>
-          Data Structures, Algorithms, Computer Systems, Computer Architecture,
-          Deep Learning, Networks
-        </p>
-      </div>
-    </details>
+      <section aria-labelledby="awards">
+        <h2 id="awards">Awards</h2>
+        <div class="entry compact">
+          <div class="entry-head">
+            <h3>International Physics Olympiad, Bronze Medal</h3>
+            <span class="entry-dates">2023</span>
+          </div>
+        </div>
+        <div class="entry compact">
+          <div class="entry-head">
+            <h3>MIT Quantum Computing Hackathon, First Place</h3>
+            <span class="entry-dates">2025</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <details class="collapsible">
-      <summary>Mathematics and Physics</summary>
-      <div class="collapsible-content">
-        <p>
-          Mathematics major coursework in progress. International Physics Olympiad Bronze Medal (2023).
-        </p>
-      </div>
-    </details>
-
-    <h2>Experience</h2>
-
-    <div class="experience-item">
-      <b><a href="https://apollo.cs.yale.edu/">Yale Apollo Lab</a></b> - Sep 2025 - Present<br>
-      Research assistant. Developing policy-streaming PPO for dexterous hand manipulation in ManiSkill and MuJoCo with RGB inputs, CNN encoders, frame stacking, and observation normalization.
-    </div>
-
-    <div class="experience-item">
-      <b><a href="https://www.vlrlab.net/">Yale Vision Lab</a></b> - Jul 2025 - Present<br>
-      Research assistant. Investigating vision-language-action policies for multimodal robot navigation using LoRA adapters, instruction tuning, and behavior cloning.
-    </div>
-
-    <div class="experience-item">
-      <b><a href="https://gersteinlab.org/">Yale Gerstein Lab</a></b> - Jul 2025 - Present<br>
-      Research assistant. Fine-tuned E(3)-equivariant diffusion model with GRPO and force-field guidance on QM9 for physics-informed molecular generation in 3D. Submitted to ICML 2026.
-    </div>
-
-    <div class="experience-item">
-      <b>Yale Graph and Geometric Learning Lab</b> - Mar 2025 - Dec 2025<br>
-      Research assistant. Fine-tuned time-series LLM on telecom data with contrastive pretraining and retrieval-augmented inputs.
-    </div>
-
-    <div class="experience-item">
-      <b>Norric</b> - Mar 2025 - Present<br>
-      Machine Learning Engineer. Built a GCP-deployed RAG Q&A system for financial documents using FastAPI, Cloud Run, Vertex AI embeddings, Llama 3-8B, Pinecone, and Cloud Storage.
-    </div>
-
-    <h2>Teaching</h2>
-    <div class="experience-item"><b>Teaching Assistant</b><br>
-      Algorithms (Yale) - 2025 - Present
-    </div>
-
-    <h2>Awards</h2>
-    <div class="experience-item">
-      International Physics Olympiad Bronze Medal (2023)<br>
-      MIT Quantum Computing Hackathon First Place (2025)
-    </div>
-
+    <footer class="site-footer">Last edited: October 2026</footer>
   </div>
-  <div class="last-edited">Last edited: February 19, 2026</div>
 </body>
 </html>
